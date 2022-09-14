@@ -40,7 +40,7 @@ baseurl: "/DV2022" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     #twitter: fastdotai
-    github: guebin/DV2022
+    github: guebin
 
 # Set this to true to get LaTeX math equation support
 use_math: true
