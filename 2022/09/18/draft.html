@@ -4,22 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>(3주차) 9월19일 | 데이터시각화 (전북대학교 2022년 2학기)</title>
+<title>(3주차) 9월19일 – draft | 데이터시각화 (전북대학교 2022년 2학기)</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="(3주차) 9월19일" />
+<meta property="og:title" content="(3주차) 9월19일 – draft" />
 <meta name="author" content="최규빈" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="라인플랏, 산점도, 여러그림 그리기, 산점도 응용예제 - 상관계수의 해석" />
-<meta property="og:description" content="라인플랏, 산점도, 여러그림 그리기, 산점도 응용예제 - 상관계수의 해석" />
+<meta name="description" content="라인플랏, 산점도, 여러 그림 그리기, fig와 axes의 이해" />
+<meta property="og:description" content="라인플랏, 산점도, 여러 그림 그리기, fig와 axes의 이해" />
 <link rel="canonical" href="https://guebin.github.io/DV2022/2022/09/18/draft.html" />
 <meta property="og:url" content="https://guebin.github.io/DV2022/2022/09/18/draft.html" />
 <meta property="og:site_name" content="데이터시각화 (전북대학교 2022년 2학기)" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-18T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="(3주차) 9월19일" />
+<meta property="twitter:title" content="(3주차) 9월19일 – draft" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"최규빈"},"dateModified":"2022-09-18T00:00:00-05:00","datePublished":"2022-09-18T00:00:00-05:00","description":"라인플랏, 산점도, 여러그림 그리기, 산점도 응용예제 - 상관계수의 해석","headline":"(3주차) 9월19일","mainEntityOfPage":{"@type":"WebPage","@id":"https://guebin.github.io/DV2022/2022/09/18/draft.html"},"url":"https://guebin.github.io/DV2022/2022/09/18/draft.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"최규빈"},"dateModified":"2022-09-18T00:00:00-05:00","datePublished":"2022-09-18T00:00:00-05:00","description":"라인플랏, 산점도, 여러 그림 그리기, fig와 axes의 이해","headline":"(3주차) 9월19일 – draft","mainEntityOfPage":{"@type":"WebPage","@id":"https://guebin.github.io/DV2022/2022/09/18/draft.html"},"url":"https://guebin.github.io/DV2022/2022/09/18/draft.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/DV2022/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://guebin.github.io/DV2022/feed.xml" title="데이터시각화 (전북대학교 2022년 2학기)" /><link rel="shortcut icon" type="image/x-icon" href="/DV2022/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -90,7 +90,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">(3주차) 9월19일</h1><p class="page-description">라인플랏, 산점도, 여러그림 그리기, 산점도 응용예제 - 상관계수의 해석</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-18T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">(3주차) 9월19일 -- draft</h1><p class="page-description">라인플랏, 산점도, 여러 그림 그리기, fig와 axes의 이해</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-18T00:00:00-05:00" itemprop="datePublished">
         Sep 18, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -137,7 +137,6 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#강의영상">강의영상 </a></li>
-<li class="toc-entry toc-h2"><a href="#참고자료">참고자료 </a></li>
 <li class="toc-entry toc-h2"><a href="#오늘-배울-내용?">오늘 배울 내용? </a></li>
 <li class="toc-entry toc-h2"><a href="#imports">imports </a></li>
 <li class="toc-entry toc-h2"><a href="#Line-plot">Line plot </a>
@@ -163,7 +162,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#따로그리기-(subplot)-//-외우세요-이거">따로그리기 (subplot) // 외우세요 이거 </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#fig,-axes-:-matplotlib으로-어렵게-그림을-기리는-방법">fig, axes : matplotlib으로 어렵게 그림을 기리는 방법 </a>
+<li class="toc-entry toc-h2"><a href="#fig와-axes의-이해-:-matplotlib으로-어렵게-그림을-기리는-방법">fig와 axes의 이해 : matplotlib으로 어렵게 그림을 기리는 방법 </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#예제1">예제1 </a></li>
 <li class="toc-entry toc-h3"><a href="#예제2:-예제1의-응용">예제2: 예제1의 응용 </a></li>
@@ -194,15 +193,6 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="참고자료">
-<a class="anchor" href="#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>참고자료<a class="anchor-link" href="#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C"> </a>
-</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="오늘-배울-내용?">
 <a class="anchor" href="#%EC%98%A4%EB%8A%98-%EB%B0%B0%EC%9A%B8-%EB%82%B4%EC%9A%A9?" aria-hidden="true"><span class="octicon octicon-link"></span></a>오늘 배울 내용?<a class="anchor-link" href="#%EC%98%A4%EB%8A%98-%EB%B0%B0%EC%9A%B8-%EB%82%B4%EC%9A%A9?"> </a>
 </h2>
@@ -214,7 +204,7 @@ window.onload = wrap_img;
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>-</code> 라인플랏과 산점도를 그리는 방법</p>
 <p><code>-</code> 여러 그림그리기 (한 플랏에 그림을 겹치는 방법, subplot을 그리는 방법)</p>
-<p><code>-</code> 산점도 응용예제: 상관계수의 이해, 앤스콤의 플랏</p>
+<p><code>-</code> fig, axes의 개념이해 (객체지향적 프로그래밍)</p>
 
 </div>
 </div>
@@ -2670,8 +2660,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="fig,-axes-:-matplotlib으로-어렵게-그림을-기리는-방법">
-<a class="anchor" href="#fig,-axes-:-matplotlib%EC%9C%BC%EB%A1%9C-%EC%96%B4%EB%A0%B5%EA%B2%8C-%EA%B7%B8%EB%A6%BC%EC%9D%84-%EA%B8%B0%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>fig, axes : matplotlib으로 어렵게 그림을 기리는 방법<a class="anchor-link" href="#fig,-axes-:-matplotlib%EC%9C%BC%EB%A1%9C-%EC%96%B4%EB%A0%B5%EA%B2%8C-%EA%B7%B8%EB%A6%BC%EC%9D%84-%EA%B8%B0%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95"> </a>
+<h2 id="fig와-axes의-이해-:-matplotlib으로-어렵게-그림을-기리는-방법">
+<a class="anchor" href="#fig%EC%99%80-axes%EC%9D%98-%EC%9D%B4%ED%95%B4-:-matplotlib%EC%9C%BC%EB%A1%9C-%EC%96%B4%EB%A0%B5%EA%B2%8C-%EA%B7%B8%EB%A6%BC%EC%9D%84-%EA%B8%B0%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>fig와 axes의 이해 : matplotlib으로 어렵게 그림을 기리는 방법<a class="anchor-link" href="#fig%EC%99%80-axes%EC%9D%98-%EC%9D%B4%ED%95%B4-:-matplotlib%EC%9C%BC%EB%A1%9C-%EC%96%B4%EB%A0%B5%EA%B2%8C-%EA%B7%B8%EB%A6%BC%EC%9D%84-%EA%B8%B0%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95"> </a>
 </h2>
 </div>
 </div>
