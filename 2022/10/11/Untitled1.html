@@ -11,15 +11,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="판다스– lambda, map, 행과열의 선택" />
 <meta property="og:description" content="판다스– lambda, map, 행과열의 선택" />
-<link rel="canonical" href="https://guebin.github.io/DV2022/2022/10/09/Untitled1.html" />
-<meta property="og:url" content="https://guebin.github.io/DV2022/2022/10/09/Untitled1.html" />
+<link rel="canonical" href="https://guebin.github.io/DV2022/2022/10/11/Untitled1.html" />
+<meta property="og:url" content="https://guebin.github.io/DV2022/2022/10/11/Untitled1.html" />
 <meta property="og:site_name" content="데이터시각화 (전북대학교 2022년 2학기)" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-10-09T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-10-11T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="(6주차) 10월12일 – draft" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"최규빈"},"dateModified":"2022-10-09T00:00:00-05:00","datePublished":"2022-10-09T00:00:00-05:00","description":"판다스– lambda, map, 행과열의 선택","headline":"(6주차) 10월12일 – draft","mainEntityOfPage":{"@type":"WebPage","@id":"https://guebin.github.io/DV2022/2022/10/09/Untitled1.html"},"url":"https://guebin.github.io/DV2022/2022/10/09/Untitled1.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"최규빈"},"dateModified":"2022-10-11T00:00:00-05:00","datePublished":"2022-10-11T00:00:00-05:00","description":"판다스– lambda, map, 행과열의 선택","headline":"(6주차) 10월12일 – draft","mainEntityOfPage":{"@type":"WebPage","@id":"https://guebin.github.io/DV2022/2022/10/11/Untitled1.html"},"url":"https://guebin.github.io/DV2022/2022/10/11/Untitled1.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/DV2022/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://guebin.github.io/DV2022/feed.xml" title="데이터시각화 (전북대학교 2022년 2학기)" /><link rel="shortcut icon" type="image/x-icon" href="/DV2022/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -90,15 +90,15 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">(6주차) 10월12일 -- draft</h1><p class="page-description">판다스-- lambda, map, 행과열의 선택</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-09T00:00:00-05:00" itemprop="datePublished">
-        Oct 9, 2022
+    <h1 class="post-title p-name" itemprop="name headline">(6주차) 10월12일 -- draft</h1><p class="page-description">판다스-- lambda, map, 행과열의 선택</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-11T00:00:00-05:00" itemprop="datePublished">
+        Oct 11, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">최규빈</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      4 min read
     
 </span></p>
 
@@ -140,15 +140,6 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#lambda">lambda </a></li>
 <li class="toc-entry toc-h3"><a href="#map">map </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#df의-열의-선택하는-방법">df의 열의 선택하는 방법 </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#단일컬럼선택($\star$)">단일컬럼선택($\star$) </a></li>
-<li class="toc-entry toc-h3"><a href="#인덱스로-선택">인덱스로 선택 </a></li>
-<li class="toc-entry toc-h3"><a href="#이름으로-선택">이름으로 선택 </a></li>
-<li class="toc-entry toc-h3"><a href="#슬라이싱">슬라이싱 </a></li>
-<li class="toc-entry toc-h3"><a href="#조건의-맞는-열을-선택">조건의 맞는 열을 선택 </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#mpl-미세먼지팁">mpl 미세먼지팁 </a>
@@ -200,7 +191,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="c1">### lambda x: (x-a)**2 가 실행되는 순간 함수오브젝트가 생성됨</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="c1">### lambda x: (x-2)**2 가 실행되는 순간 함수오브젝트가 생성됨</span>
 </pre></div>
 
     </div>
@@ -232,8 +223,6 @@ window.onload = wrap_img;
 <ul>
 <li>
 <code>lambda x: (x-2)**2</code> 는 $\text{lambda}(x) = (x-2)^2$의 느낌으로 기억하면 외우기 쉽다. </li>
-<li>
-<code>lambda x: (x-2)**2</code> 는 "아직 이름이 없는 함수오브젝트를 (가칭 lambda 라고 하자) 만들고 기능은 x를 입력으로 하고 (x-2)**2를 출력하도록 하자" 라는 뜻으로 해석하면 된다. </li>
 </ul>
 
 </div>
@@ -511,7 +500,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">y</span> <span class="k">else</span> <span class="n">y</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="n">x</span><span class="o">&lt;</span><span class="n">y</span> <span class="k">else</span> <span class="n">y</span>
 </pre></div>
 
     </div>
@@ -699,7 +688,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&lt;matplotlib.lines.Line2D at 0x7f017d0c06d0&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x7fd804408390&gt;]</pre>
 </div>
 
 </div>
@@ -897,7 +886,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x7f017cc63fd0&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fd804399d90&gt;</pre>
 </div>
 
 </div>
@@ -987,7 +976,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x7f017bdc0ed0&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fd80434ac10&gt;</pre>
 </div>
 
 </div>
@@ -1118,7 +1107,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x7f017c07ec10&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fd80434add0&gt;</pre>
 </div>
 
 </div>
@@ -1208,7 +1197,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.legend.Legend at 0x7f017d167590&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fd8042a1a50&gt;</pre>
 </div>
 
 </div>
@@ -1241,7 +1230,15 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> 예제1: $\text{map}\big(f,[x_1,\dots,x_n]\big)=\big[f(x_1),\dots,f(x_n)\big]$</p>
+<p><code>-</code> 개념: $\text{map}\big(f,[x_1,\dots,x_n]\big)=\big[f(x_1),\dots,f(x_n)\big]$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 예제1: map의 사용방법</p>
 
 </div>
 </div>
@@ -1253,7 +1250,26 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">(),</span><span class="s1">'asdfASDF'</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">f</span><span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">))</span>
+<span class="n">y</span>
 </pre></div>
 
     </div>
@@ -1268,7 +1284,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[False, False, False, False, True, True, True, True]</pre>
+<pre>[2, 3, 4]</pre>
 </div>
 
 </div>
@@ -1282,7 +1298,81 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(다른표현1)</em></p>
+<p>(다른구현1)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># 뭔가 만들어 졌는뎅</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;map at 0x7fa578f39fd0&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]))</span> <span class="c1"># 리스트화 시키면!~</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[2, 3, 4]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>(다른구현2)</em></p>
 
 </div>
 </div>
@@ -1295,8 +1385,8 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2줄써야하네..</span>
-<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
-<span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="s1">'asdfASDF'</span><span class="p">]</span>
+<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span> 
+<span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span>
 </pre></div>
 
     </div>
@@ -1311,7 +1401,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[False, False, False, False, True, True, True, True]</pre>
+<pre>[2, 3, 4]</pre>
 </div>
 
 </div>
@@ -1325,7 +1415,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(다른표현2)</em></p>
+<p><em>(다른구현3)</em></p>
 
 </div>
 </div>
@@ -1338,7 +1428,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 가독성이 별로..</span>
-<span class="p">[(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">())(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="s1">'asdfASDF'</span><span class="p">]</span>
+<span class="p">[(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)(</span><span class="n">xi</span><span class="p">)</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span>
 </pre></div>
 
     </div>
@@ -1353,7 +1443,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[False, False, False, False, True, True, True, True]</pre>
+<pre>[2, 3, 4]</pre>
 </div>
 
 </div>
@@ -1367,7 +1457,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>(다른표현3)-- 최악</em></p>
+<p><em>(다른표현4)-- 최악</em></p>
 
 </div>
 </div>
@@ -1379,11 +1469,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[]</span> 
-<span class="n">string</span> <span class="o">=</span> <span class="s1">'asdfASDF'</span>
-<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="p">[]</span> 
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+    <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">xi</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -1400,7 +1490,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span>
 </pre></div>
 
     </div>
@@ -1415,7 +1505,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[False, False, False, False, True, True, True, True]</pre>
+<pre>[2, 3, 4]</pre>
 </div>
 
 </div>
@@ -1429,7 +1519,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> 예제2: map의 결과는 iterable object임 (그 자체로 for문을 돌릴 수 있음)</p>
+<p><em>(다른표현5)-- 더 최악</em></p>
 
 </div>
 </div>
@@ -1441,7 +1531,132 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mp</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">(),</span><span class="s1">'asdfASDF'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="p">[]</span> 
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
+    <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[2, 3, 4]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 예제2: 문자열을 입력을 넣고 대문자이면 T, 소문자이면 F</p>
+
+<pre><code>입력: A,B,C,a,b,c
+출력: T,T,T,f,f,f</code></pre>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">'ABCabc'</span><span class="p">)</span>
+<span class="n">f</span><span class="o">=</span> <span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
+<span class="n">y</span><span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(['A', 'B', 'C', 'a', 'b', 'c'], [True, True, True, False, False, False])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 예제3: map의 결과는 iterable object임 (그 자체로 for문을 돌릴 수 있음)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mp</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">isupper</span><span class="p">(),</span><span class="s1">'ABCabc'</span><span class="p">)</span>
 <span class="n">mp</span>
 </pre></div>
 
@@ -1457,7 +1672,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;map at 0x7f01795551d0&gt;</pre>
+<pre>&lt;map at 0x7fd8033af390&gt;</pre>
 </div>
 
 </div>
@@ -1522,14 +1737,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>False
+<pre>True
+True
+True
 False
 False
 False
-True
-True
-True
-True
 </pre>
 </div>
 </div>
@@ -1584,7 +1797,7 @@ True
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>다른표현</em></p>
+<p><em>(다른표현)-- 리스트컴프리헨션</em></p>
 
 </div>
 </div>
@@ -1679,7 +1892,7 @@ True
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_1084824/3313405704.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">/tmp/ipykernel_1457438/3313405704.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>list<span class="ansi-blue-fg">(</span>map<span class="ansi-blue-fg">(</span>flst<span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span> <span class="ansi-red-fg"># 출력으로 [1,2,3] 을 기대했으나..</span>
 
 <span class="ansi-red-fg">TypeError</span>: 'list' object is not callable</pre>
@@ -1736,462 +1949,8 @@ True
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> <strong>종합: 리스트컴프리헨션과 비교하면 (1) 반복인덱스를 쓰지 않는 장점이 있는 반면 (2) 좀 더 제약적으로 사용할 수밖에 없다는 단점이 있음</strong></p>
+<p><code>-</code> <strong>종합: 리스트컴프리헨션과 비교하면 (1) 반복인덱스를 쓰지 않는 장점이 있는 반면 (2) 좀 더 제약적으로 사용할 수밖에 없다는 단점이 있음 // (1)의 장점 때문에 (2)의 제약이 있는 것임</strong></p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="df의-열의-선택하는-방법">
-<a class="anchor" href="#df%EC%9D%98-%EC%97%B4%EC%9D%98-%EC%84%A0%ED%83%9D%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>df의 열의 선택하는 방법<a class="anchor-link" href="#df%EC%9D%98-%EC%97%B4%EC%9D%98-%EC%84%A0%ED%83%9D%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95"> </a>
-</h2>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">43052</span><span class="p">)</span>
-<span class="n">att</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">rep</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">mid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">fin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">key</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'202212'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">501</span><span class="p">),</span><span class="mi">200</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span>
-<span class="n">test_dic</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">:</span> <span class="p">{</span><span class="s1">'att'</span><span class="p">:</span><span class="n">att</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">'rep'</span><span class="p">:</span><span class="n">rep</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">'mid'</span><span class="p">:</span><span class="n">mid</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">'fin'</span><span class="p">:</span><span class="n">fin</span><span class="p">[</span><span class="n">i</span><span class="p">]}</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">200</span><span class="p">)}</span>
-<span class="k">del</span><span class="p">(</span><span class="n">att</span><span class="p">);</span><span class="k">del</span><span class="p">(</span><span class="n">rep</span><span class="p">);</span><span class="k">del</span><span class="p">(</span><span class="n">mid</span><span class="p">);</span><span class="k">del</span><span class="p">(</span><span class="n">fin</span><span class="p">);</span><span class="k">del</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_dic</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">df</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>index</th>
-      <th>att</th>
-      <th>rep</th>
-      <th>mid</th>
-      <th>fin</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>202212377</td>
-      <td>65</td>
-      <td>45</td>
-      <td>0</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>202212473</td>
-      <td>95</td>
-      <td>30</td>
-      <td>60</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>202212310</td>
-      <td>65</td>
-      <td>85</td>
-      <td>15</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>202212460</td>
-      <td>55</td>
-      <td>35</td>
-      <td>35</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>202212320</td>
-      <td>80</td>
-      <td>60</td>
-      <td>55</td>
-      <td>70</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>195</th>
-      <td>202212491</td>
-      <td>55</td>
-      <td>70</td>
-      <td>40</td>
-      <td>95</td>
-    </tr>
-    <tr>
-      <th>196</th>
-      <td>202212352</td>
-      <td>65</td>
-      <td>85</td>
-      <td>25</td>
-      <td>85</td>
-    </tr>
-    <tr>
-      <th>197</th>
-      <td>202212315</td>
-      <td>85</td>
-      <td>85</td>
-      <td>100</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>198</th>
-      <td>202212470</td>
-      <td>80</td>
-      <td>65</td>
-      <td>35</td>
-      <td>60</td>
-    </tr>
-    <tr>
-      <th>199</th>
-      <td>202212436</td>
-      <td>50</td>
-      <td>95</td>
-      <td>45</td>
-      <td>85</td>
-    </tr>
-  </tbody>
-</table>
-<p>200 rows × 5 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> 데이터프레임은 아래의 형태라고 가정한다.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="단일컬럼선택($\star$)">
-<a class="anchor" href="#%EB%8B%A8%EC%9D%BC%EC%BB%AC%EB%9F%BC%EC%84%A0%ED%83%9D(%24%5Cstar%24)" aria-hidden="true"><span class="octicon octicon-link"></span></a>단일컬럼선택($\star$)<a class="anchor-link" href="#%EB%8B%A8%EC%9D%BC%EC%BB%AC%EB%9F%BC%EC%84%A0%ED%83%9D(%24%5Cstar%24)"> </a>
-</h3>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">att</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0      65
-1      95
-2      65
-3      55
-4      80
-       ..
-195    55
-196    65
-197    85
-198    80
-199    50
-Name: att, Length: 200, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'att'</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0      65
-1      95
-2      65
-3      55
-4      80
-       ..
-195    55
-196    65
-197    85
-198    80
-199    50
-Name: att, Length: 200, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>df.columns<span class="o">?</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea ">
-<pre><span class="ansi-red-fg">Type:</span>        Index
-<span class="ansi-red-fg">String form:</span> Index(['att', 'rep', 'mid', 'fin'], dtype='object')
-<span class="ansi-red-fg">Length:</span>      4
-<span class="ansi-red-fg">File:</span>        ~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/indexes/base.py
-<span class="ansi-red-fg">Docstring:</span>  
-Immutable sequence used for indexing and alignment. The basic object
-storing axis labels for all pandas objects.
-
-Parameters
-----------
-data : array-like (1-dimensional)
-dtype : NumPy dtype (default: object)
-    If dtype is None, we find the dtype that best fits the data.
-    If an actual dtype is provided, we coerce to that dtype if it's safe.
-    Otherwise, an error will be raised.
-copy : bool
-    Make a copy of input ndarray.
-name : object
-    Name to be stored in the index.
-tupleize_cols : bool (default: True)
-    When True, attempt to create a MultiIndex if possible.
-
-See Also
---------
-RangeIndex : Index implementing a monotonic integer range.
-CategoricalIndex : Index of :class:`Categorical` s.
-MultiIndex : A multi-level, or hierarchical Index.
-IntervalIndex : An Index of :class:`Interval` s.
-DatetimeIndex : Index of datetime64 data.
-TimedeltaIndex : Index of timedelta64 data.
-PeriodIndex : Index of Period data.
-Int64Index : A special case of :class:`Index` with purely integer labels.
-UInt64Index : A special case of :class:`Index` with purely unsigned integer labels.
-Float64Index : A special case of :class:`Index` with purely float labels.
-
-Notes
------
-An Index instance can **only** contain hashable objects
-
-Examples
---------
-&gt;&gt;&gt; pd.Index([1, 2, 3])
-Int64Index([1, 2, 3], dtype='int64')
-
-&gt;&gt;&gt; pd.Index(list('abc'))
-Index(['a', 'b', 'c'], dtype='object')
-</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="인덱스로-선택">
-<a class="anchor" href="#%EC%9D%B8%EB%8D%B1%EC%8A%A4%EB%A1%9C-%EC%84%A0%ED%83%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>인덱스로 선택<a class="anchor-link" href="#%EC%9D%B8%EB%8D%B1%EC%8A%A4%EB%A1%9C-%EC%84%A0%ED%83%9D"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> df.iloc 이용</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> df.loc 이용</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="이름으로-선택">
-<a class="anchor" href="#%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%84%A0%ED%83%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>이름으로 선택<a class="anchor-link" href="#%EC%9D%B4%EB%A6%84%EC%9C%BC%EB%A1%9C-%EC%84%A0%ED%83%9D"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="슬라이싱">
-<a class="anchor" href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>슬라이싱<a class="anchor-link" href="#%EC%8A%AC%EB%9D%BC%EC%9D%B4%EC%8B%B1"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="조건의-맞는-열을-선택">
-<a class="anchor" href="#%EC%A1%B0%EA%B1%B4%EC%9D%98-%EB%A7%9E%EB%8A%94-%EC%97%B4%EC%9D%84-%EC%84%A0%ED%83%9D" aria-hidden="true"><span class="octicon octicon-link"></span></a>조건의 맞는 열을 선택<a class="anchor-link" href="#%EC%A1%B0%EA%B1%B4%EC%9D%98-%EB%A7%9E%EB%8A%94-%EC%97%B4%EC%9D%84-%EC%84%A0%ED%83%9D"> </a>
-</h3>
 </div>
 </div>
 </div>
@@ -2639,6 +2398,24 @@ Index(['a', 'b', 'c'], dtype='object')
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x1</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">y1</span><span class="o">=</span> <span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -2840,7 +2617,7 @@ Index(['a', 'b', 'c'], dtype='object')
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/DV2022/2022/10/09/Untitled1.html" hidden></a>
+</script><a class="u-url" href="/DV2022/2022/10/11/Untitled1.html" hidden></a>
 </article>
 
       </div>
