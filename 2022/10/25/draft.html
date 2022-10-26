@@ -95,7 +95,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      74 min read
+      82 min read
     
 </span></p>
 
@@ -171,6 +171,1327 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="df:-&#49352;&#47196;&#50868;-&#50676;&#51032;-&#54624;&#45817;-2&#45800;&#44228;-(&#50672;&#49604;&#54624;&#45817;)">df: &#49352;&#47196;&#50868; &#50676;&#51032; &#54624;&#45817; 2&#45800;&#44228; (&#50672;&#49604;&#54624;&#45817;)<a class="anchor-link" href="#df:-&#49352;&#47196;&#50868;-&#50676;&#51032;-&#54624;&#45817;-2&#45800;&#44228;-(&#50672;&#49604;&#54624;&#45817;)"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#47784;&#54000;&#48652;">&#47784;&#54000;&#48652;<a class="anchor-link" href="#&#47784;&#54000;&#48652;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 원본데이터를 가급적 손상시키지 않으면서 데이터 변형을 하고 싶음.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)})</span>
+<span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>복사본 생성</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">df</span> 
+<span class="n">df2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df2</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> 
+<span class="n">df2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">C</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">C</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">C</span><span class="p">)</span>
+<span class="n">df2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>-1.414214</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td>-0.707107</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+      <td>0.707107</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+      <td>1.414214</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="c1"># 니가 왜 거기서 나와??</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 올바른 코드1</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)})</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df2</span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df2</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> 
+<span class="n">df2</span><span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">C</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">C</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>-1.414214</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td>-0.707107</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+      <td>0.707107</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+      <td>1.414214</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 올바른 코드2</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)})</span>
+<span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span>
+<span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span> 
+<span class="n">df</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="s1">&#39;C=(A+B)/2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="s1">&#39;D=(C-@mean(C))/@std(C)&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>-1.414214</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td>-0.707107</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+      <td>0.707107</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+      <td>1.414214</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>어디까지 지원되는지 안되는지도 모르겠고, </li>
+<li>외부함수 선언하는 것도 좀 귀찮아요 </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 올바른 코드3 (assign) --&gt; 실패</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">D</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_1920834/3162433242.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>df<span class="ansi-blue-fg">.</span>assign<span class="ansi-blue-fg">(</span>C <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">.</span>A<span class="ansi-blue-fg">+</span>df<span class="ansi-blue-fg">.</span>B<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">/</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>assign<span class="ansi-blue-fg">(</span>D <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">.</span>C<span class="ansi-blue-fg">-</span>np<span class="ansi-blue-fg">.</span>mean<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">.</span>C<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">/</span>np<span class="ansi-blue-fg">.</span>std<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">.</span>C<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/generic.py</span> in <span class="ansi-cyan-fg">__getattr__</span><span class="ansi-blue-fg">(self, name)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5485</span>         ):
+<span class="ansi-green-intense-fg ansi-bold">   5486</span>             <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">[</span>name<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-fg">-&gt; 5487</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> object<span class="ansi-blue-fg">.</span>__getattribute__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5488</span> 
+<span class="ansi-green-intense-fg ansi-bold">   5489</span>     <span class="ansi-green-fg">def</span> __setattr__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">:</span> str<span class="ansi-blue-fg">,</span> value<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">AttributeError</span>: &#39;DataFrame&#39; object has no attribute &#39;C&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>아래와 같이 고쳐야함</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">_df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">D</span> <span class="o">=</span> <span class="p">(</span><span class="n">_df</span><span class="o">.</span><span class="n">C</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">_df</span><span class="o">.</span><span class="n">C</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">_df</span><span class="o">.</span><span class="n">C</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>-1.414214</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td>-0.707107</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+      <td>0.707107</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+      <td>1.414214</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>이건 우리 철학이랑 안맞음.. ㅠㅠ </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#54644;&#44208;&#52293;">&#54644;&#44208;&#52293;<a class="anchor-link" href="#&#54644;&#44208;&#52293;"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>두번째 assign의 D가 current dataframe을 의미하도록 하려면 아래와 같이 lambda df: 를 추가하면된다.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">D</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>-1.414214</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td>-0.707107</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+      <td>0.707107</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+      <td>1.414214</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>-</code> 연쇄할당</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">C</span><span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">A</span><span class="o">+</span><span class="n">df</span><span class="o">.</span><span class="n">B</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">D</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">C</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">E</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">D</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>2.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>2</td>
+      <td>1.5</td>
+      <td>3.5</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>3</td>
+      <td>2.5</td>
+      <td>4.5</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>4</td>
+      <td>3.5</td>
+      <td>5.5</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>5</td>
+      <td>4.5</td>
+      <td>6.5</td>
+      <td>4.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -4356,7 +5677,7 @@ Name: Release Clause, Length: 1151, dtype: object</pre>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>분석의 편의를 위하여 (1) colnames를 변경하고 (2) 결측치를 제거하고 (3) 몇 가지 전처리를 추가로 진행한뒤 df2를 만들어서 분석하는게 좋음</p>
+<blockquote><p>분석의 편의를 위하여 (1) colnames를 변경하고 (2) 결측치를 제거하고 (3) 몇 가지 전처리를 추가로 진행한 뒤 df2를 만들어서 분석하는게 좋음</p>
 </blockquote>
 
 </div>
@@ -13686,16 +15007,19 @@ Categories (4, object): [&#39;~400&#39; &lt; &#39;400~700&#39; &lt; &#39;700~120
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Texas    Apple      12
-         Orange     10
-         Banana     40
-Arizona  Apple       9
-         Orange      7
-         Banana     12
-Florida  Apple       0
-         Orange     14
-         Banana    190
-dtype: int64</pre>
+<pre>Date            
+2019-10  Samsung    461
+         Apple      324
+         Huawei     136
+         Xiaomi     109
+         Oppo        76
+                   ... 
+2020-10  Nokia       20
+         Lenovo      22
+         OnePlus      9
+         Sony        22
+         Asus        21
+Length: 208, dtype: int64</pre>
 </div>
 
 </div>
@@ -13745,7 +15069,7 @@ dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>level_0</th>
+      <th>Date</th>
       <th>level_1</th>
       <th>0</th>
     </tr>
@@ -13753,60 +15077,73 @@ dtype: int64</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Texas</td>
-      <td>Apple</td>
-      <td>12</td>
+      <td>2019-10</td>
+      <td>Samsung</td>
+      <td>461</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Texas</td>
-      <td>Orange</td>
-      <td>10</td>
+      <td>2019-10</td>
+      <td>Apple</td>
+      <td>324</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Texas</td>
-      <td>Banana</td>
-      <td>40</td>
+      <td>2019-10</td>
+      <td>Huawei</td>
+      <td>136</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Arizona</td>
-      <td>Apple</td>
-      <td>9</td>
+      <td>2019-10</td>
+      <td>Xiaomi</td>
+      <td>109</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Arizona</td>
-      <td>Orange</td>
-      <td>7</td>
+      <td>2019-10</td>
+      <td>Oppo</td>
+      <td>76</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Arizona</td>
-      <td>Banana</td>
-      <td>12</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Florida</td>
-      <td>Apple</td>
-      <td>0</td>
+      <th>203</th>
+      <td>2020-10</td>
+      <td>Nokia</td>
+      <td>20</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>Florida</td>
-      <td>Orange</td>
-      <td>14</td>
+      <th>204</th>
+      <td>2020-10</td>
+      <td>Lenovo</td>
+      <td>22</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>Florida</td>
-      <td>Banana</td>
-      <td>190</td>
+      <th>205</th>
+      <td>2020-10</td>
+      <td>OnePlus</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>2020-10</td>
+      <td>Sony</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>2020-10</td>
+      <td>Asus</td>
+      <td>21</td>
     </tr>
   </tbody>
 </table>
+<p>208 rows × 3 columns</p>
 </div>
 </div>
 
@@ -13857,7 +15194,7 @@ dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>group1</th>
+      <th>Date</th>
       <th>group2</th>
       <th>X</th>
     </tr>
@@ -13865,60 +15202,73 @@ dtype: int64</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Texas</td>
-      <td>Apple</td>
-      <td>12</td>
+      <td>2019-10</td>
+      <td>Samsung</td>
+      <td>461</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Texas</td>
-      <td>Orange</td>
-      <td>10</td>
+      <td>2019-10</td>
+      <td>Apple</td>
+      <td>324</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Texas</td>
-      <td>Banana</td>
-      <td>40</td>
+      <td>2019-10</td>
+      <td>Huawei</td>
+      <td>136</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Arizona</td>
-      <td>Apple</td>
-      <td>9</td>
+      <td>2019-10</td>
+      <td>Xiaomi</td>
+      <td>109</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Arizona</td>
-      <td>Orange</td>
-      <td>7</td>
+      <td>2019-10</td>
+      <td>Oppo</td>
+      <td>76</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Arizona</td>
-      <td>Banana</td>
-      <td>12</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Florida</td>
-      <td>Apple</td>
-      <td>0</td>
+      <th>203</th>
+      <td>2020-10</td>
+      <td>Nokia</td>
+      <td>20</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>Florida</td>
-      <td>Orange</td>
-      <td>14</td>
+      <th>204</th>
+      <td>2020-10</td>
+      <td>Lenovo</td>
+      <td>22</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>Florida</td>
-      <td>Banana</td>
-      <td>190</td>
+      <th>205</th>
+      <td>2020-10</td>
+      <td>OnePlus</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>2020-10</td>
+      <td>Sony</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>2020-10</td>
+      <td>Asus</td>
+      <td>21</td>
     </tr>
   </tbody>
 </table>
+<p>208 rows × 3 columns</p>
 </div>
 </div>
 
@@ -14375,29 +15725,290 @@ dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Samsung</th>
       <th>Apple</th>
-      <th>Orange</th>
-      <th>Banana</th>
+      <th>Huawei</th>
+      <th>Xiaomi</th>
+      <th>Oppo</th>
+      <th>Mobicel</th>
+      <th>Motorola</th>
+      <th>LG</th>
+      <th>Others</th>
+      <th>Realme</th>
+      <th>Google</th>
+      <th>Nokia</th>
+      <th>Lenovo</th>
+      <th>OnePlus</th>
+      <th>Sony</th>
+      <th>Asus</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Texas</th>
-      <td>12</td>
-      <td>10</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <th>Arizona</th>
-      <td>9</td>
-      <td>7</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>Florida</th>
-      <td>0</td>
+      <th>2019-10</th>
+      <td>461</td>
+      <td>324</td>
+      <td>136</td>
+      <td>109</td>
+      <td>76</td>
+      <td>81</td>
+      <td>43</td>
+      <td>37</td>
+      <td>135</td>
+      <td>28</td>
+      <td>39</td>
       <td>14</td>
-      <td>190</td>
+      <td>22</td>
+      <td>17</td>
+      <td>20</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>2019-11</th>
+      <td>461</td>
+      <td>358</td>
+      <td>167</td>
+      <td>141</td>
+      <td>86</td>
+      <td>61</td>
+      <td>29</td>
+      <td>36</td>
+      <td>141</td>
+      <td>27</td>
+      <td>29</td>
+      <td>20</td>
+      <td>23</td>
+      <td>10</td>
+      <td>19</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>2019-12</th>
+      <td>426</td>
+      <td>383</td>
+      <td>143</td>
+      <td>105</td>
+      <td>53</td>
+      <td>45</td>
+      <td>51</td>
+      <td>48</td>
+      <td>129</td>
+      <td>30</td>
+      <td>20</td>
+      <td>26</td>
+      <td>28</td>
+      <td>18</td>
+      <td>18</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>2020-01</th>
+      <td>677</td>
+      <td>494</td>
+      <td>212</td>
+      <td>187</td>
+      <td>110</td>
+      <td>79</td>
+      <td>65</td>
+      <td>49</td>
+      <td>158</td>
+      <td>23</td>
+      <td>13</td>
+      <td>19</td>
+      <td>19</td>
+      <td>22</td>
+      <td>27</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>2020-02</th>
+      <td>593</td>
+      <td>520</td>
+      <td>217</td>
+      <td>195</td>
+      <td>112</td>
+      <td>67</td>
+      <td>62</td>
+      <td>71</td>
+      <td>157</td>
+      <td>25</td>
+      <td>18</td>
+      <td>16</td>
+      <td>24</td>
+      <td>18</td>
+      <td>23</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2020-03</th>
+      <td>637</td>
+      <td>537</td>
+      <td>246</td>
+      <td>187</td>
+      <td>92</td>
+      <td>66</td>
+      <td>59</td>
+      <td>67</td>
+      <td>145</td>
+      <td>21</td>
+      <td>16</td>
+      <td>24</td>
+      <td>18</td>
+      <td>31</td>
+      <td>22</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>2020-04</th>
+      <td>647</td>
+      <td>583</td>
+      <td>222</td>
+      <td>154</td>
+      <td>98</td>
+      <td>59</td>
+      <td>48</td>
+      <td>64</td>
+      <td>113</td>
+      <td>20</td>
+      <td>23</td>
+      <td>25</td>
+      <td>19</td>
+      <td>19</td>
+      <td>23</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>2020-05</th>
+      <td>629</td>
+      <td>518</td>
+      <td>192</td>
+      <td>176</td>
+      <td>91</td>
+      <td>87</td>
+      <td>50</td>
+      <td>66</td>
+      <td>150</td>
+      <td>43</td>
+      <td>27</td>
+      <td>15</td>
+      <td>18</td>
+      <td>19</td>
+      <td>19</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>2020-06</th>
+      <td>663</td>
+      <td>552</td>
+      <td>209</td>
+      <td>185</td>
+      <td>93</td>
+      <td>69</td>
+      <td>54</td>
+      <td>60</td>
+      <td>140</td>
+      <td>39</td>
+      <td>16</td>
+      <td>16</td>
+      <td>17</td>
+      <td>29</td>
+      <td>25</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>2020-07</th>
+      <td>599</td>
+      <td>471</td>
+      <td>214</td>
+      <td>193</td>
+      <td>89</td>
+      <td>78</td>
+      <td>65</td>
+      <td>59</td>
+      <td>130</td>
+      <td>40</td>
+      <td>27</td>
+      <td>25</td>
+      <td>21</td>
+      <td>18</td>
+      <td>18</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2020-08</th>
+      <td>615</td>
+      <td>567</td>
+      <td>204</td>
+      <td>182</td>
+      <td>105</td>
+      <td>82</td>
+      <td>62</td>
+      <td>42</td>
+      <td>129</td>
+      <td>47</td>
+      <td>16</td>
+      <td>23</td>
+      <td>21</td>
+      <td>27</td>
+      <td>23</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2020-09</th>
+      <td>621</td>
+      <td>481</td>
+      <td>230</td>
+      <td>220</td>
+      <td>102</td>
+      <td>88</td>
+      <td>56</td>
+      <td>49</td>
+      <td>143</td>
+      <td>54</td>
+      <td>14</td>
+      <td>15</td>
+      <td>17</td>
+      <td>15</td>
+      <td>19</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2020-10</th>
+      <td>637</td>
+      <td>555</td>
+      <td>232</td>
+      <td>203</td>
+      <td>90</td>
+      <td>52</td>
+      <td>63</td>
+      <td>49</td>
+      <td>140</td>
+      <td>33</td>
+      <td>17</td>
+      <td>20</td>
+      <td>22</td>
+      <td>9</td>
+      <td>22</td>
+      <td>21</td>
     </tr>
   </tbody>
 </table>
@@ -14458,51 +16069,62 @@ dtype: int64</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Apple</td>
-      <td>12</td>
+      <td>Samsung</td>
+      <td>461</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Apple</td>
-      <td>9</td>
+      <td>Samsung</td>
+      <td>461</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Apple</td>
-      <td>0</td>
+      <td>Samsung</td>
+      <td>426</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Orange</td>
-      <td>10</td>
+      <td>Samsung</td>
+      <td>677</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Orange</td>
-      <td>7</td>
+      <td>Samsung</td>
+      <td>593</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Orange</td>
-      <td>14</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Banana</td>
-      <td>40</td>
+      <th>203</th>
+      <td>Asus</td>
+      <td>16</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>Banana</td>
+      <th>204</th>
+      <td>Asus</td>
       <td>12</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>Banana</td>
-      <td>190</td>
+      <th>205</th>
+      <td>Asus</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>Asus</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>Asus</td>
+      <td>21</td>
     </tr>
   </tbody>
 </table>
+<p>208 rows × 2 columns</p>
 </div>
 </div>
 
@@ -14690,29 +16312,290 @@ dtype: object</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Samsung</th>
       <th>Apple</th>
-      <th>Orange</th>
-      <th>Banana</th>
+      <th>Huawei</th>
+      <th>Xiaomi</th>
+      <th>Oppo</th>
+      <th>Mobicel</th>
+      <th>Motorola</th>
+      <th>LG</th>
+      <th>Others</th>
+      <th>Realme</th>
+      <th>Google</th>
+      <th>Nokia</th>
+      <th>Lenovo</th>
+      <th>OnePlus</th>
+      <th>Sony</th>
+      <th>Asus</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Texas</th>
-      <td>12</td>
-      <td>10</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <th>Arizona</th>
-      <td>9</td>
-      <td>7</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>Florida</th>
-      <td>0</td>
+      <th>2019-10</th>
+      <td>461</td>
+      <td>324</td>
+      <td>136</td>
+      <td>109</td>
+      <td>76</td>
+      <td>81</td>
+      <td>43</td>
+      <td>37</td>
+      <td>135</td>
+      <td>28</td>
+      <td>39</td>
       <td>14</td>
-      <td>190</td>
+      <td>22</td>
+      <td>17</td>
+      <td>20</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>2019-11</th>
+      <td>461</td>
+      <td>358</td>
+      <td>167</td>
+      <td>141</td>
+      <td>86</td>
+      <td>61</td>
+      <td>29</td>
+      <td>36</td>
+      <td>141</td>
+      <td>27</td>
+      <td>29</td>
+      <td>20</td>
+      <td>23</td>
+      <td>10</td>
+      <td>19</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>2019-12</th>
+      <td>426</td>
+      <td>383</td>
+      <td>143</td>
+      <td>105</td>
+      <td>53</td>
+      <td>45</td>
+      <td>51</td>
+      <td>48</td>
+      <td>129</td>
+      <td>30</td>
+      <td>20</td>
+      <td>26</td>
+      <td>28</td>
+      <td>18</td>
+      <td>18</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>2020-01</th>
+      <td>677</td>
+      <td>494</td>
+      <td>212</td>
+      <td>187</td>
+      <td>110</td>
+      <td>79</td>
+      <td>65</td>
+      <td>49</td>
+      <td>158</td>
+      <td>23</td>
+      <td>13</td>
+      <td>19</td>
+      <td>19</td>
+      <td>22</td>
+      <td>27</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>2020-02</th>
+      <td>593</td>
+      <td>520</td>
+      <td>217</td>
+      <td>195</td>
+      <td>112</td>
+      <td>67</td>
+      <td>62</td>
+      <td>71</td>
+      <td>157</td>
+      <td>25</td>
+      <td>18</td>
+      <td>16</td>
+      <td>24</td>
+      <td>18</td>
+      <td>23</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2020-03</th>
+      <td>637</td>
+      <td>537</td>
+      <td>246</td>
+      <td>187</td>
+      <td>92</td>
+      <td>66</td>
+      <td>59</td>
+      <td>67</td>
+      <td>145</td>
+      <td>21</td>
+      <td>16</td>
+      <td>24</td>
+      <td>18</td>
+      <td>31</td>
+      <td>22</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>2020-04</th>
+      <td>647</td>
+      <td>583</td>
+      <td>222</td>
+      <td>154</td>
+      <td>98</td>
+      <td>59</td>
+      <td>48</td>
+      <td>64</td>
+      <td>113</td>
+      <td>20</td>
+      <td>23</td>
+      <td>25</td>
+      <td>19</td>
+      <td>19</td>
+      <td>23</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>2020-05</th>
+      <td>629</td>
+      <td>518</td>
+      <td>192</td>
+      <td>176</td>
+      <td>91</td>
+      <td>87</td>
+      <td>50</td>
+      <td>66</td>
+      <td>150</td>
+      <td>43</td>
+      <td>27</td>
+      <td>15</td>
+      <td>18</td>
+      <td>19</td>
+      <td>19</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>2020-06</th>
+      <td>663</td>
+      <td>552</td>
+      <td>209</td>
+      <td>185</td>
+      <td>93</td>
+      <td>69</td>
+      <td>54</td>
+      <td>60</td>
+      <td>140</td>
+      <td>39</td>
+      <td>16</td>
+      <td>16</td>
+      <td>17</td>
+      <td>29</td>
+      <td>25</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>2020-07</th>
+      <td>599</td>
+      <td>471</td>
+      <td>214</td>
+      <td>193</td>
+      <td>89</td>
+      <td>78</td>
+      <td>65</td>
+      <td>59</td>
+      <td>130</td>
+      <td>40</td>
+      <td>27</td>
+      <td>25</td>
+      <td>21</td>
+      <td>18</td>
+      <td>18</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2020-08</th>
+      <td>615</td>
+      <td>567</td>
+      <td>204</td>
+      <td>182</td>
+      <td>105</td>
+      <td>82</td>
+      <td>62</td>
+      <td>42</td>
+      <td>129</td>
+      <td>47</td>
+      <td>16</td>
+      <td>23</td>
+      <td>21</td>
+      <td>27</td>
+      <td>23</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>2020-09</th>
+      <td>621</td>
+      <td>481</td>
+      <td>230</td>
+      <td>220</td>
+      <td>102</td>
+      <td>88</td>
+      <td>56</td>
+      <td>49</td>
+      <td>143</td>
+      <td>54</td>
+      <td>14</td>
+      <td>15</td>
+      <td>17</td>
+      <td>15</td>
+      <td>19</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2020-10</th>
+      <td>637</td>
+      <td>555</td>
+      <td>232</td>
+      <td>203</td>
+      <td>90</td>
+      <td>52</td>
+      <td>63</td>
+      <td>49</td>
+      <td>140</td>
+      <td>33</td>
+      <td>17</td>
+      <td>20</td>
+      <td>22</td>
+      <td>9</td>
+      <td>22</td>
+      <td>21</td>
     </tr>
   </tbody>
 </table>
@@ -14766,33 +16649,285 @@ dtype: object</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>index</th>
+      <th>Date</th>
+      <th>Samsung</th>
       <th>Apple</th>
-      <th>Orange</th>
-      <th>Banana</th>
+      <th>Huawei</th>
+      <th>Xiaomi</th>
+      <th>Oppo</th>
+      <th>Mobicel</th>
+      <th>Motorola</th>
+      <th>LG</th>
+      <th>Others</th>
+      <th>Realme</th>
+      <th>Google</th>
+      <th>Nokia</th>
+      <th>Lenovo</th>
+      <th>OnePlus</th>
+      <th>Sony</th>
+      <th>Asus</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Texas</td>
-      <td>12</td>
-      <td>10</td>
-      <td>40</td>
+      <td>2019-10</td>
+      <td>461</td>
+      <td>324</td>
+      <td>136</td>
+      <td>109</td>
+      <td>76</td>
+      <td>81</td>
+      <td>43</td>
+      <td>37</td>
+      <td>135</td>
+      <td>28</td>
+      <td>39</td>
+      <td>14</td>
+      <td>22</td>
+      <td>17</td>
+      <td>20</td>
+      <td>17</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Arizona</td>
-      <td>9</td>
-      <td>7</td>
-      <td>12</td>
+      <td>2019-11</td>
+      <td>461</td>
+      <td>358</td>
+      <td>167</td>
+      <td>141</td>
+      <td>86</td>
+      <td>61</td>
+      <td>29</td>
+      <td>36</td>
+      <td>141</td>
+      <td>27</td>
+      <td>29</td>
+      <td>20</td>
+      <td>23</td>
+      <td>10</td>
+      <td>19</td>
+      <td>27</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Florida</td>
-      <td>0</td>
+      <td>2019-12</td>
+      <td>426</td>
+      <td>383</td>
+      <td>143</td>
+      <td>105</td>
+      <td>53</td>
+      <td>45</td>
+      <td>51</td>
+      <td>48</td>
+      <td>129</td>
+      <td>30</td>
+      <td>20</td>
+      <td>26</td>
+      <td>28</td>
+      <td>18</td>
+      <td>18</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2020-01</td>
+      <td>677</td>
+      <td>494</td>
+      <td>212</td>
+      <td>187</td>
+      <td>110</td>
+      <td>79</td>
+      <td>65</td>
+      <td>49</td>
+      <td>158</td>
+      <td>23</td>
+      <td>13</td>
+      <td>19</td>
+      <td>19</td>
+      <td>22</td>
+      <td>27</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2020-02</td>
+      <td>593</td>
+      <td>520</td>
+      <td>217</td>
+      <td>195</td>
+      <td>112</td>
+      <td>67</td>
+      <td>62</td>
+      <td>71</td>
+      <td>157</td>
+      <td>25</td>
+      <td>18</td>
+      <td>16</td>
+      <td>24</td>
+      <td>18</td>
+      <td>23</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2020-03</td>
+      <td>637</td>
+      <td>537</td>
+      <td>246</td>
+      <td>187</td>
+      <td>92</td>
+      <td>66</td>
+      <td>59</td>
+      <td>67</td>
+      <td>145</td>
+      <td>21</td>
+      <td>16</td>
+      <td>24</td>
+      <td>18</td>
+      <td>31</td>
+      <td>22</td>
       <td>14</td>
-      <td>190</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2020-04</td>
+      <td>647</td>
+      <td>583</td>
+      <td>222</td>
+      <td>154</td>
+      <td>98</td>
+      <td>59</td>
+      <td>48</td>
+      <td>64</td>
+      <td>113</td>
+      <td>20</td>
+      <td>23</td>
+      <td>25</td>
+      <td>19</td>
+      <td>19</td>
+      <td>23</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2020-05</td>
+      <td>629</td>
+      <td>518</td>
+      <td>192</td>
+      <td>176</td>
+      <td>91</td>
+      <td>87</td>
+      <td>50</td>
+      <td>66</td>
+      <td>150</td>
+      <td>43</td>
+      <td>27</td>
+      <td>15</td>
+      <td>18</td>
+      <td>19</td>
+      <td>19</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2020-06</td>
+      <td>663</td>
+      <td>552</td>
+      <td>209</td>
+      <td>185</td>
+      <td>93</td>
+      <td>69</td>
+      <td>54</td>
+      <td>60</td>
+      <td>140</td>
+      <td>39</td>
+      <td>16</td>
+      <td>16</td>
+      <td>17</td>
+      <td>29</td>
+      <td>25</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2020-07</td>
+      <td>599</td>
+      <td>471</td>
+      <td>214</td>
+      <td>193</td>
+      <td>89</td>
+      <td>78</td>
+      <td>65</td>
+      <td>59</td>
+      <td>130</td>
+      <td>40</td>
+      <td>27</td>
+      <td>25</td>
+      <td>21</td>
+      <td>18</td>
+      <td>18</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2020-08</td>
+      <td>615</td>
+      <td>567</td>
+      <td>204</td>
+      <td>182</td>
+      <td>105</td>
+      <td>82</td>
+      <td>62</td>
+      <td>42</td>
+      <td>129</td>
+      <td>47</td>
+      <td>16</td>
+      <td>23</td>
+      <td>21</td>
+      <td>27</td>
+      <td>23</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2020-09</td>
+      <td>621</td>
+      <td>481</td>
+      <td>230</td>
+      <td>220</td>
+      <td>102</td>
+      <td>88</td>
+      <td>56</td>
+      <td>49</td>
+      <td>143</td>
+      <td>54</td>
+      <td>14</td>
+      <td>15</td>
+      <td>17</td>
+      <td>15</td>
+      <td>19</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2020-10</td>
+      <td>637</td>
+      <td>555</td>
+      <td>232</td>
+      <td>203</td>
+      <td>90</td>
+      <td>52</td>
+      <td>63</td>
+      <td>49</td>
+      <td>140</td>
+      <td>33</td>
+      <td>17</td>
+      <td>20</td>
+      <td>22</td>
+      <td>9</td>
+      <td>22</td>
+      <td>21</td>
     </tr>
   </tbody>
 </table>
@@ -14826,91 +16961,75 @@ dtype: object</pre>
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ansi-cyan-fg">get_loc</span><span class="ansi-blue-fg">(self, key, method, tolerance)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3360</span>             <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3361</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_engine<span class="ansi-blue-fg">.</span>get_loc<span class="ansi-blue-fg">(</span>casted_key<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3362</span>             <span class="ansi-green-fg">except</span> KeyError <span class="ansi-green-fg">as</span> err<span class="ansi-blue-fg">:</span>
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/_libs/index.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc</span><span class="ansi-blue-fg">()</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/_libs/index.pyx</span> in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc</span><span class="ansi-blue-fg">()</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>index</th>
-      <th>variable</th>
-      <th>value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Texas</td>
-      <td>Apple</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Arizona</td>
-      <td>Apple</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Florida</td>
-      <td>Apple</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Texas</td>
-      <td>Orange</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Arizona</td>
-      <td>Orange</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Florida</td>
-      <td>Orange</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Texas</td>
-      <td>Banana</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Arizona</td>
-      <td>Banana</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Florida</td>
-      <td>Banana</td>
-      <td>190</td>
-    </tr>
-  </tbody>
-</table>
+<span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-red-fg">KeyError</span>: &#39;index&#39;
+
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_1920834/2325455802.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>df<span class="ansi-blue-fg">.</span>reset_index<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>melt<span class="ansi-blue-fg">(</span>id_vars<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;index&#39;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">melt</span><span class="ansi-blue-fg">(self, id_vars, value_vars, var_name, value_name, col_level, ignore_index)</span>
+<span class="ansi-green-intense-fg ansi-bold">   8344</span>             value_name<span class="ansi-blue-fg">=</span>value_name<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   8345</span>             col_level<span class="ansi-blue-fg">=</span>col_level<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">-&gt; 8346</span><span class="ansi-red-fg">             </span>ignore_index<span class="ansi-blue-fg">=</span>ignore_index<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   8347</span>         )
+<span class="ansi-green-intense-fg ansi-bold">   8348</span> 
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/reshape/melt.py</span> in <span class="ansi-cyan-fg">melt</span><span class="ansi-blue-fg">(frame, id_vars, value_vars, var_name, value_name, col_level, ignore_index)</span>
+<span class="ansi-green-intense-fg ansi-bold">    135</span>     mdata <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">}</span>
+<span class="ansi-green-intense-fg ansi-bold">    136</span>     <span class="ansi-green-fg">for</span> col <span class="ansi-green-fg">in</span> id_vars<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 137</span><span class="ansi-red-fg">         </span>id_data <span class="ansi-blue-fg">=</span> frame<span class="ansi-blue-fg">.</span>pop<span class="ansi-blue-fg">(</span>col<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    138</span>         <span class="ansi-green-fg">if</span> is_extension_array_dtype<span class="ansi-blue-fg">(</span>id_data<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    139</span>             id_data <span class="ansi-blue-fg">=</span> cast<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Series&#34;</span><span class="ansi-blue-fg">,</span> concat<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>id_data<span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">*</span> K<span class="ansi-blue-fg">,</span> ignore_index<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">pop</span><span class="ansi-blue-fg">(self, item)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5224</span>         <span class="ansi-cyan-fg">3</span>  monkey        NaN
+<span class="ansi-green-intense-fg ansi-bold">   5225</span>         &#34;&#34;&#34;
+<span class="ansi-green-fg">-&gt; 5226</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> super<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>pop<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">=</span>item<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5227</span> 
+<span class="ansi-green-intense-fg ansi-bold">   5228</span>     <span class="ansi-blue-fg">@</span>doc<span class="ansi-blue-fg">(</span>NDFrame<span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>_shared_doc_kwargs<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/generic.py</span> in <span class="ansi-cyan-fg">pop</span><span class="ansi-blue-fg">(self, item)</span>
+<span class="ansi-green-intense-fg ansi-bold">    868</span> 
+<span class="ansi-green-intense-fg ansi-bold">    869</span>     <span class="ansi-green-fg">def</span> pop<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> item<span class="ansi-blue-fg">:</span> Hashable<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">-&gt;</span> Series <span class="ansi-blue-fg">|</span> Any<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 870</span><span class="ansi-red-fg">         </span>result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">[</span>item<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    871</span>         <span class="ansi-green-fg">del</span> self<span class="ansi-blue-fg">[</span>item<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    872</span> 
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3456</span>             <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">.</span>nlevels <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   3457</span>                 <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_getitem_multilevel<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">-&gt; 3458</span><span class="ansi-red-fg">             </span>indexer <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">.</span>get_loc<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3459</span>             <span class="ansi-green-fg">if</span> is_integer<span class="ansi-blue-fg">(</span>indexer<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   3460</span>                 indexer <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span>indexer<span class="ansi-blue-fg">]</span>
+
+<span class="ansi-green-fg">~/anaconda3/envs/py37/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ansi-cyan-fg">get_loc</span><span class="ansi-blue-fg">(self, key, method, tolerance)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3361</span>                 <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_engine<span class="ansi-blue-fg">.</span>get_loc<span class="ansi-blue-fg">(</span>casted_key<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3362</span>             <span class="ansi-green-fg">except</span> KeyError <span class="ansi-green-fg">as</span> err<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 3363</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> KeyError<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">from</span> err
+<span class="ansi-green-intense-fg ansi-bold">   3364</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3365</span>         <span class="ansi-green-fg">if</span> is_scalar<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">and</span> isna<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">not</span> self<span class="ansi-blue-fg">.</span>hasnans<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">KeyError</span>: &#39;index&#39;</pre>
 </div>
-</div>
-
 </div>
 
 </div>
