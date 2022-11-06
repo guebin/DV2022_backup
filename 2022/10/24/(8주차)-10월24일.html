@@ -138,7 +138,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#강의영상">강의영상 </a></li>
 <li class="toc-entry toc-h2"><a href="#imports">imports </a></li>
-<li class="toc-entry toc-h2"><a href="#df:-새로운-열의-할당-2단계-(연쇄할당)">df: 새로운 열의 할당 2단계 (연쇄할당) </a>
+<li class="toc-entry toc-h2"><a href="#판다스:-새로운-열의-할당-2단계-(연쇄할당)">판다스: 새로운 열의 할당 2단계 (연쇄할당) </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#모티브">모티브 </a></li>
 <li class="toc-entry toc-h3"><a href="#해결책1:-df.copy()이용,-.eval()이용">해결책1: df.copy()이용, .eval()이용 </a></li>
@@ -153,7 +153,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#데이터분석+시각화">데이터분석+시각화 </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#Groupby">Groupby </a>
+<li class="toc-entry toc-h2"><a href="#판다스:-Groupby">판다스: Groupby </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#flights-data">flights data </a></li>
 <li class="toc-entry toc-h3"><a href="#get_groups">get_groups </a></li>
@@ -162,7 +162,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="##-EX1:-[AIRLINE]-$\to$-{ARR_DELAY:mean}"># EX1: [AIRLINE] $\to$ {ARR_DELAY:mean} </a></li>
 <li class="toc-entry toc-h4"><a href="##-EX2:-[AIRLINE,WEEKDAY]-$\to$-{CANCELLED:sum}"># EX2: [AIRLINE,WEEKDAY] $\to$ {CANCELLED:sum} </a></li>
 <li class="toc-entry toc-h4"><a href="##-EX3:-[AIRLINE,WEEKDAY]-$\to$-{CANCELLED:sum,mean},-{DIVERTED:-sum,mean}"># EX3: [AIRLINE,WEEKDAY] $\to$ {CANCELLED:sum,mean}, {DIVERTED: sum,mean} </a></li>
-<li class="toc-entry toc-h4"><a href="##-EX4:-[AIRLINE,WEEKDAY]-$\to$-{CANCELLED:sum,mean,size},-{AIR_TIME:-mean,var}"># EX4: [AIRLINE,WEEKDAY] $\to$ {CANCELLED:sum,mean,size}, {AIR_TIME: mean,var} </a></li>
+<li class="toc-entry toc-h4"><a href="##-EX4:-[AIRLINE,WEEKDAY]-$\to$-{CANCELLED:sum,mean,count},-{AIR_TIME:-mean,var}"># EX4: [AIRLINE,WEEKDAY] $\to$ {CANCELLED:sum,mean,count}, {AIR_TIME: mean,var} </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#연속형변수를-기준으로-groupby-->-agg">연속형변수를 기준으로 groupby -&gt; agg </a></li>
@@ -248,8 +248,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="df:-새로운-열의-할당-2단계-(연쇄할당)">
-<a class="anchor" href="#df:-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%B4%EC%9D%98-%ED%95%A0%EB%8B%B9-2%EB%8B%A8%EA%B3%84-(%EC%97%B0%EC%87%84%ED%95%A0%EB%8B%B9)" aria-hidden="true"><span class="octicon octicon-link"></span></a>df: 새로운 열의 할당 2단계 (연쇄할당)<a class="anchor-link" href="#df:-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%B4%EC%9D%98-%ED%95%A0%EB%8B%B9-2%EB%8B%A8%EA%B3%84-(%EC%97%B0%EC%87%84%ED%95%A0%EB%8B%B9)"> </a>
+<h2 id="판다스:-새로운-열의-할당-2단계-(연쇄할당)">
+<a class="anchor" href="#%ED%8C%90%EB%8B%A4%EC%8A%A4:-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%B4%EC%9D%98-%ED%95%A0%EB%8B%B9-2%EB%8B%A8%EA%B3%84-(%EC%97%B0%EC%87%84%ED%95%A0%EB%8B%B9)" aria-hidden="true"><span class="octicon octicon-link"></span></a>판다스: 새로운 열의 할당 2단계 (연쇄할당)<a class="anchor-link" href="#%ED%8C%90%EB%8B%A4%EC%8A%A4:-%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%B4%EC%9D%98-%ED%95%A0%EB%8B%B9-2%EB%8B%A8%EA%B3%84-(%EC%97%B0%EC%87%84%ED%95%A0%EB%8B%B9)"> </a>
 </h2>
 </div>
 </div>
@@ -7882,8 +7882,8 @@ Name: Overall, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Groupby">
-<a class="anchor" href="#Groupby" aria-hidden="true"><span class="octicon octicon-link"></span></a>Groupby<a class="anchor-link" href="#Groupby"> </a>
+<h2 id="판다스:-Groupby">
+<a class="anchor" href="#%ED%8C%90%EB%8B%A4%EC%8A%A4:-Groupby" aria-hidden="true"><span class="octicon octicon-link"></span></a>판다스: Groupby<a class="anchor-link" href="#%ED%8C%90%EB%8B%A4%EC%8A%A4:-Groupby"> </a>
 </h2>
 </div>
 </div>
@@ -13303,8 +13303,8 @@ Name: DIVERTED, Length: 58492, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="#-EX4:-[AIRLINE,WEEKDAY]-$\to$-{CANCELLED:sum,mean,size},-{AIR_TIME:-mean,var}">
-<a class="anchor" href="##-EX4:-%5BAIRLINE,WEEKDAY%5D-%24%5Cto%24-%7BCANCELLED:sum,mean,size%7D,-%7BAIR_TIME:-mean,var%7D" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>#</code> EX4: [AIRLINE,WEEKDAY] $\to$ {CANCELLED:sum,mean,size}, {AIR_TIME: mean,var}<a class="anchor-link" href="##-EX4:-%5BAIRLINE,WEEKDAY%5D-%24%5Cto%24-%7BCANCELLED:sum,mean,size%7D,-%7BAIR_TIME:-mean,var%7D"> </a>
+<h4 id="#-EX4:-[AIRLINE,WEEKDAY]-$\to$-{CANCELLED:sum,mean,count},-{AIR_TIME:-mean,var}">
+<a class="anchor" href="##-EX4:-%5BAIRLINE,WEEKDAY%5D-%24%5Cto%24-%7BCANCELLED:sum,mean,count%7D,-%7BAIR_TIME:-mean,var%7D" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>#</code> EX4: [AIRLINE,WEEKDAY] $\to$ {CANCELLED:sum,mean,count}, {AIR_TIME: mean,var}<a class="anchor-link" href="##-EX4:-%5BAIRLINE,WEEKDAY%5D-%24%5Cto%24-%7BCANCELLED:sum,mean,count%7D,-%7BAIR_TIME:-mean,var%7D"> </a>
 </h4>
 </div>
 </div>
