@@ -141,9 +141,32 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Make-tidy-data">Make tidy data<a class="anchor-link" href="#Make-tidy-data"> </a></h2>
+<h2 id="melt,-stack,-set_index,-reset_index">melt, stack, set_index, reset_index<a class="anchor-link" href="#melt,-stack,-set_index,-reset_index"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="tidydata">tidydata<a class="anchor-link" href="#tidydata"> </a></h2>
 </div>
 </div>
 </div>
@@ -265,19 +288,6 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="&#54400;&#51060;1:-stack-+-reset_index">&#54400;&#51060;1: stack + reset_index<a class="anchor-link" href="#&#54400;&#51060;1:-stack-+-reset_index"> </a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>-</code> 문제의 깃헙주소로 들어가서 데이터를 관찰 $\to$ 좌측상단이 비워져있음 $\to$ <code>index_col=0</code> 옵션을 사용</p>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -285,7 +295,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/guebin/2021DV/master/_notebooks/phone.csv&#39;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/guebin/2021DV/master/_notebooks/phone.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -318,6 +328,7 @@ window.onload = wrap_img;
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Date</th>
       <th>Samsung</th>
       <th>Apple</th>
       <th>Huawei</th>
@@ -335,29 +346,11 @@ window.onload = wrap_img;
       <th>Sony</th>
       <th>Asus</th>
     </tr>
-    <tr>
-      <th>Date</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
   </thead>
   <tbody>
     <tr>
-      <th>2019-10</th>
+      <th>0</th>
+      <td>2019-10</td>
       <td>461</td>
       <td>324</td>
       <td>136</td>
@@ -376,7 +369,8 @@ window.onload = wrap_img;
       <td>17</td>
     </tr>
     <tr>
-      <th>2019-11</th>
+      <th>1</th>
+      <td>2019-11</td>
       <td>461</td>
       <td>358</td>
       <td>167</td>
@@ -395,7 +389,8 @@ window.onload = wrap_img;
       <td>27</td>
     </tr>
     <tr>
-      <th>2019-12</th>
+      <th>2</th>
+      <td>2019-12</td>
       <td>426</td>
       <td>383</td>
       <td>143</td>
@@ -414,7 +409,8 @@ window.onload = wrap_img;
       <td>19</td>
     </tr>
     <tr>
-      <th>2020-01</th>
+      <th>3</th>
+      <td>2020-01</td>
       <td>677</td>
       <td>494</td>
       <td>212</td>
@@ -433,7 +429,8 @@ window.onload = wrap_img;
       <td>22</td>
     </tr>
     <tr>
-      <th>2020-02</th>
+      <th>4</th>
+      <td>2020-02</td>
       <td>593</td>
       <td>520</td>
       <td>217</td>
@@ -452,7 +449,8 @@ window.onload = wrap_img;
       <td>20</td>
     </tr>
     <tr>
-      <th>2020-03</th>
+      <th>5</th>
+      <td>2020-03</td>
       <td>637</td>
       <td>537</td>
       <td>246</td>
@@ -471,7 +469,8 @@ window.onload = wrap_img;
       <td>14</td>
     </tr>
     <tr>
-      <th>2020-04</th>
+      <th>6</th>
+      <td>2020-04</td>
       <td>647</td>
       <td>583</td>
       <td>222</td>
@@ -490,7 +489,8 @@ window.onload = wrap_img;
       <td>21</td>
     </tr>
     <tr>
-      <th>2020-05</th>
+      <th>7</th>
+      <td>2020-05</td>
       <td>629</td>
       <td>518</td>
       <td>192</td>
@@ -509,7 +509,8 @@ window.onload = wrap_img;
       <td>13</td>
     </tr>
     <tr>
-      <th>2020-06</th>
+      <th>8</th>
+      <td>2020-06</td>
       <td>663</td>
       <td>552</td>
       <td>209</td>
@@ -528,7 +529,8 @@ window.onload = wrap_img;
       <td>16</td>
     </tr>
     <tr>
-      <th>2020-07</th>
+      <th>9</th>
+      <td>2020-07</td>
       <td>599</td>
       <td>471</td>
       <td>214</td>
@@ -547,7 +549,8 @@ window.onload = wrap_img;
       <td>12</td>
     </tr>
     <tr>
-      <th>2020-08</th>
+      <th>10</th>
+      <td>2020-08</td>
       <td>615</td>
       <td>567</td>
       <td>204</td>
@@ -566,7 +569,8 @@ window.onload = wrap_img;
       <td>20</td>
     </tr>
     <tr>
-      <th>2020-09</th>
+      <th>11</th>
+      <td>2020-09</td>
       <td>621</td>
       <td>481</td>
       <td>230</td>
@@ -585,7 +589,8 @@ window.onload = wrap_img;
       <td>15</td>
     </tr>
     <tr>
-      <th>2020-10</th>
+      <th>12</th>
+      <td>2020-10</td>
       <td>637</td>
       <td>555</td>
       <td>232</td>
@@ -616,6 +621,12 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="&#54400;&#51060;1:-stack-+-reset_index">&#54400;&#51060;1: stack + reset_index<a class="anchor-link" href="#&#54400;&#51060;1:-stack-+-reset_index"> </a></h4>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
