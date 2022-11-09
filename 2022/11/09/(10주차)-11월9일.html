@@ -136,6 +136,8 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#강의영상">강의영상 </a></li>
+<li class="toc-entry toc-h2"><a href="#imports">imports </a></li>
 <li class="toc-entry toc-h2"><a href="#심슨의-역설">심슨의 역설 </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#시각화1:-전체합격률">시각화1: 전체합격률 </a></li>
@@ -152,6 +154,37 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="강의영상">
+<a class="anchor" href="#%EA%B0%95%EC%9D%98%EC%98%81%EC%83%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>강의영상<a class="anchor-link" href="#%EA%B0%95%EC%9D%98%EC%98%81%EC%83%81"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>
+</p>
+<center class="youtube-iframe-wrapper">
+    <iframe width="730" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="imports">
+<a class="anchor" href="#imports" aria-hidden="true"><span class="octicon octicon-link"></span></a>imports<a class="anchor-link" href="#imports"> </a>
+</h2>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1677,9 +1710,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data2</span><span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'department'</span><span class="p">,</span><span class="s1">'gender'</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">'count'</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s1">'count'</span><span class="p">:</span><span class="s1">'count2'</span><span class="p">},</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>\
-<span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="s1">'rate=count/count2'</span><span class="p">)</span>
-<span class="n">ggplot</span><span class="p">(</span><span class="n">data2</span><span class="p">)</span><span class="o">+</span><span class="n">geom_col</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'gender'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">'count2'</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="s1">'gender'</span><span class="p">))</span><span class="o">+</span><span class="n">facet_wrap</span><span class="p">(</span><span class="s1">'department'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 시각화예시</span>
 </pre></div>
 
     </div>
