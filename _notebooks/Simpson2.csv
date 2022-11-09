@@ -1,0 +1,9 @@
+department,result,gender,count
+A,fail,female,0
+A,fail,male,100
+A,pass,female,1
+A,pass,male,900
+B,fail,female,400
+B,fail,male,1
+B,pass,female,600
+B,pass,male,1
